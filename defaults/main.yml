@@ -1,0 +1,16 @@
+varnish_vcl_tpl: "default.vcl.j2"
+varnish_vcl_name: "default.vcl"
+varnish_vcl_dir: "/etc/varnish"
+varnish_vcl_path: "{{varnish_vcl_dir}}/{{varnish_vcl_name}}"
+
+
+varnish_ulimit: 131072
+varnish_memlock: 82000
+
+varnish_listen_port: 80
+varnish_admin_port: 6082
+varnish_malloc_size: 1G
+
+varnish_backend_host: "127.0.0.1"
+varnish_backend_port: "8080"
+varnish_backend_max_connections: 300
